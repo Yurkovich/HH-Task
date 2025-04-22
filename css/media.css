@@ -1,0 +1,739 @@
+@media (max-width: 1440px) {
+    .header__inner {
+        padding: 0 100px;
+    }
+
+    .benefits__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .benefits__body {
+        max-width: 100%;
+        order: 2;
+        margin-bottom: 20px;
+        grid-column: 1 / 3;
+    }
+
+    .benefits__img-1 {
+        align-self: center;
+        justify-self: center;
+        margin-right: 0;
+    }
+
+    .benefits__img-2 {
+        align-self: center;
+        justify-self: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__inner {
+        padding: 0 50px;
+    }
+
+    .header__top {
+        margin-bottom: 120px;
+    }
+
+    .header__img {
+        max-width: 60%;
+    }
+
+    .header__img img {
+        min-height: 600px;
+    }
+
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero__list {
+        align-items: center;
+    }
+
+    .hero__item {
+        justify-content: center;
+    }
+
+    .contact__container {
+        max-width: 90%;
+    }
+
+    .contact__form {
+        padding: 40px 30px;
+    }
+
+    .contact__image img {
+        right: 10%;
+    }
+
+    .benefits__item-text {
+        font-size: 22px;
+    }
+
+    .benefits__button {
+        font-size: 18px;
+        padding: 28px 45px;
+    }
+
+    .footer__button {
+        font-size: 18px;
+        padding: 28px 45px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__inner {
+        padding: 0 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__top {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .header__img {
+        max-width: 500px;
+    }
+
+    .header__img img {
+        min-height: 560px;
+    }
+
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero__list {
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero__button {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact__container {
+        flex-direction: column;
+        max-height: none;
+        height: auto;
+    }
+
+    .contact__form {
+        padding: 30px 20px;
+    }
+
+    .contact__form h2 {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact__image {
+        height: 400px;
+    }
+
+    .contact__image img {
+        display: none;
+    }
+
+    .contact__input {
+        padding: 15px;
+    }
+
+    .contact__button {
+        padding: 25px;
+    }
+
+    .benefits__item-text {
+        font-size: 20px;
+    }
+
+    .benefits__button {
+        padding: 25px 40px;
+    }
+
+    .footer__button {
+        padding: 25px 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer__bottom-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__inner {
+        padding: 0 20px;
+    }
+
+    .header__top {
+        margin-bottom: 80px;
+    }
+
+    .header__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--general-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.5s ease;
+        z-index: 100;
+    }
+
+    .header__nav.active {
+        right: 0;
+    }
+
+    .benefits__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 50px 0;
+    }
+
+    .benefits__body {
+        grid-column: 1 / 2;
+        order: 2;
+    }
+
+    .benefits__img-1,
+    .benefits__img-2 {
+        max-width: 100%;
+        max-height: none;
+        margin: 0;
+        order: 1;
+    }
+
+    .benefits__img-1 img,
+    .benefits__img-2 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .burger-menu {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 101;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .burger-menu span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--general-text);
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .burger-menu span:first-child {
+        top: 0;
+    }
+
+    .burger-menu span:nth-child(2) {
+        top: 9px;
+    }
+
+    .burger-menu span:last-child {
+        top: 18px;
+    }
+
+    .burger-menu.active span {
+        background-color: var(--general-text);
+    }
+
+    .burger-menu.active span:first-child {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active span:last-child {
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header__nav-link {
+        font-size: 24px;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .hero__inner h1 {
+        font-size: 60px;
+    }
+
+    .hero__description {
+        font-size: 40px;
+    }
+
+    .hero__item-text span {
+        font-size: 30px;
+    }
+
+    .contact__container {
+        max-width: 95%;
+    }
+
+    .contact__form {
+        padding: 25px 15px;
+    }
+
+    .contact__form button {
+        padding: 16px 0;
+        font-size: 24px;
+    }
+
+    .contact__form h2 {
+        font-size: 32px;
+    }
+
+    .contact__form input::placeholder {
+        font-size: 18px;
+        transform: translateY(5px);
+    }
+
+    .contact__image {
+        height: 300px;
+    }
+
+    .contact__input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact__checkbox-text {
+        font-size: 14px;
+    }
+
+    .footer__list {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    
+
+    .footer__col {
+        align-items: center;
+    }
+
+    .benefits__item-text {
+        font-size: 18px;
+    }
+
+    .benefits__button {
+        padding: 22px 35px;
+    }
+
+    .footer__button {
+        padding: 22px 35px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__top {
+        margin-bottom: 60px;
+        padding-top: 30px;
+    }
+
+    .header__top-logo {
+        font-size: 24px;
+    }
+
+    .header__nav-link {
+        font-size: 14px;
+    }
+
+    .header__img {
+        height: 250px;
+    }
+
+    .hero__inner h1 {
+        font-size: 40px;
+    }
+
+    .hero__description {
+        font-size: 30px;
+    }
+
+    .hero__item-text span {
+        font-size: 24px;
+    }
+
+    .contact__container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .contact__form {
+        padding: 20px 15px;
+    }
+
+    .contact__form h2 {
+        font-size: 28px;
+    }
+
+    .contact__image {
+        height: 250px;
+    }
+
+    .contact__input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact__checkbox {
+        gap: 8px;
+    }
+
+    .contact__checkbox input {
+        width: 16px;
+        height: 16px;
+    }
+
+    .contact__checkbox-text {
+        font-size: 12px;
+    }
+
+    .contact__button {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .footer__list {
+        gap: 20px;
+    }
+
+    .footer__bottom {
+        padding: 40px 0;
+    }
+
+    .footer__bottom-inner {
+        gap: 30px;
+    }
+
+    .benefits__item-text {
+        font-size: 16px;
+    }
+
+    .benefits__button {
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header__top-logo {
+        font-size: 24px;
+        letter-spacing: 0.72px;
+    }
+
+    .header__nav-link {
+        font-size: 20px;
+    }
+
+    .benefits__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__inner h1 {
+        font-size: 50px;
+    }
+
+    .hero__description {
+        font-size: 30px;
+    }
+
+    .hero__item {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__item-icon {
+        margin-right: 8px;
+    }
+
+    .hero__item-text span {
+        font-size: 14px;
+    }
+
+    .hero__button {
+        font-size: 18px;
+        padding: 25px 40px;
+    }
+
+    .contact__container {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .contact__form {
+        padding: 15px 10px;
+    }
+
+    .contact__form h2 {
+        font-size: 24px;
+    }
+
+    .contact__form input::placeholder {
+        font-size: 16px;
+    }
+
+    .contact__image {
+        height: 200px;
+    }
+
+    .contact__input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .contact__checkbox-text {
+        font-size: 12px;
+    }
+
+    .contact__button {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .footer__list {
+        gap: 20px;
+    }
+
+    .footer__social-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .footer__bottom {
+        padding: 40px 0;
+    }
+
+    .footer__bottom-inner {
+        gap: 30px;
+    }
+
+    .benefits__item-text {
+        font-size: 14px;
+    }
+
+    .benefits__button {
+        padding: 18px 25px;
+    }
+
+    .footer__button {
+        padding: 20px 26px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__top-logo {
+        font-size: 20px;
+    }
+
+    .hero__inner h1 {
+        font-size: 36px;
+    }
+
+    .hero__description {
+        font-size: 24px;
+    }
+
+    .hero__item-text span {
+        font-size: 18px;
+    }
+
+    .contact__form {
+        padding: 12px 8px;
+    }
+
+    .contact__form h2 {
+        font-size: 22px;
+    }
+
+    .contact__image {
+        height: 180px;
+    }
+
+    .contact__input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .contact__checkbox-text {
+        font-size: 10px;
+    }
+
+    .contact__button {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .footer__list {
+        font-size: 16px;
+    }
+
+    .footer__bottom {
+        font-size: 16px;
+    }
+
+    .benefits__button {
+        padding: 15px 20px;
+    }
+
+    .footer__button {
+        padding: 20px 26px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .header__top-logo {
+        font-size: 18px;
+    }
+
+    .hero__inner h1 {
+        font-size: 32px;
+    }
+
+    .hero__description {
+        font-size: 20px;
+    }
+
+    .hero__item-text span {
+        font-size: 16px;
+    }
+
+    .contact__form {
+        padding: 10px 5px;
+    }
+
+    .contact__form h2 {
+        font-size: 20px;
+    }
+
+    .contact__image {
+        height: 150px;
+    }
+
+    .contact__input {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .contact__checkbox-text {
+        font-size: 10px;
+    }
+
+    .contact__button {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .footer__list {
+        font-size: 14px;
+    }
+
+    .footer__bottom {
+        font-size: 14px;
+    }
+
+    .benefits__button {
+        padding: 12px 18px;
+    }
+
+    .footer__button {
+        padding: 18px 24px;
+    }
+}
+
+@media (hover: hover) {
+    .header__nav-link {
+        position: relative;
+    }
+
+    .header__nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #EFCFAD;
+        transition: width 0.3s ease;
+    }
+
+    .header__nav-link:hover::after {
+        width: 100%;
+    }
+}

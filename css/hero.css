@@ -1,0 +1,65 @@
+.hero__container {
+    max-width: 785px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.hero__inner {}
+
+.hero__inner h1 {
+    font-family: Prata;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.hero__title {
+    margin: 50px 0;
+}
+
+.hero__description {
+    font-size: 50px;
+    margin-bottom: 64px;
+}
+
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.hero__item {
+    display: flex;
+    align-items: center;
+}
+
+.hero__item-content {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 4px;
+    background: rgba(40, 40, 41, 0.70);
+}
+
+.hero__item-icon {
+    margin-right: 17px;
+}
+
+.hero__item-text {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.hero__item-text span {
+    font-family: Prata;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    margin-bottom: 30px;
+}
