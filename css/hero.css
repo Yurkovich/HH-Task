@@ -4,7 +4,9 @@
     height: 100%;
 }
 
-.hero__inner {}
+.hero__inner {
+    margin-top: 194px;
+}
 
 .hero__inner h1 {
     font-family: Prata;

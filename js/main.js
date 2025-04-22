@@ -202,3 +202,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+const headerTop = document.querySelector('.header__top');
+const headerTopOffset = headerTop ? headerTop.offsetTop : 0;
+
+function handleScroll() {
+    if (window.pageYOffset > headerTopOffset) {
+        headerTop.classList.add('fixed');
+    } else {
+        headerTop.classList.remove('fixed');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll);
