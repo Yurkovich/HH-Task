@@ -31,6 +31,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 5vw;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .body {
