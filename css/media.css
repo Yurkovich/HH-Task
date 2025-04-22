@@ -115,7 +115,6 @@
 
     .header__top.fixed .header__top-inner {
         max-width: 100%;
-        padding: 20px;
     }
 
     .header__top.fixed .header__nav-item:nth-child(1) {
