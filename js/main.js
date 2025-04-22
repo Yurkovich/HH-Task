@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header__img');
-    const scrolled = window.pageYOffset;
+    const scrolled = window.scrollY;
     header.style.transform = `translateY(${scrolled * 0.5}px)`;
 });
 
@@ -207,7 +207,7 @@ const headerTop = document.querySelector('.header__top');
 const headerTopOffset = headerTop ? headerTop.offsetTop : 0;
 
 function handleScroll() {
-    if (window.pageYOffset > headerTopOffset) {
+    if (window.scrollY > headerTopOffset) {
         headerTop.classList.add('fixed');
     } else {
         headerTop.classList.remove('fixed');

@@ -49,6 +49,30 @@
 
 .footer__item {}
 
+.footer__link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #EFCFAD;
+}
+
+.footer__link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #EFCFAD;
+    transition: width 0.3s ease;
+}
+
+.footer__link:hover::after {
+    width: 100%;
+}
+
 .footer__bottom {
     padding: 60px 0;
     font-family: Arial;
